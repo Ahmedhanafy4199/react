@@ -1,0 +1,76 @@
+@import "color";
+$mainColor:#09c;
+$floatLeft:left;
+$floatRight:right;
+$direction:rtl;
+
+@if ($direction=="rtl"){
+    $floatLeft:left;
+    $floatRight:right;
+}@else{
+    $floatLeft:right;
+    $floatRight:left;
+}
+
+// .parent{
+//     .child1{
+//         background-color: $mainColor;
+//     }
+//     .child2{
+//         color: $mainColor;
+//         font: {
+//             size: 12px;
+//             weight: bold;
+//         }
+//     }
+//     &:hover{
+//         background-color: $periwinkle;
+//     }
+// }
+// .all{
+//     margin: auto;
+//     padding: 5px;
+//     font-size: large;
+//     border-style: double;
+// }
+// .demo{
+//     @extend .all ;
+//     color: yellow;
+// }
+
+.parent {
+    @for $i from 1 to 6 {
+        .child#{$i}{
+            background-color: rgba($color: #cf6767, $alpha: 1/$i);
+            height: 50px;
+            width: $i*40px;
+        }
+    }
+}
+
+.one{
+    background-color: #cf6767;
+    height: 200px;
+    width: 200px;
+    float: $floatLeft;
+}
+.two{
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    float: $floatRight;
+}
+
+@mixin translate($deg) {
+    -ms-transform: translate($deg);
+    -moz-transform: translate($deg);
+    -o-transform: translate($deg);
+    -webkit-transform: translate($deg);
+    transform: translate($deg);
+}
+.brdr{
+   @include translate(30px) 
+}
+.demoo{
+    @include translate(40px)
+}

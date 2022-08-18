@@ -1,0 +1,54 @@
+.parent .child1 {
+  background-color: #cf6767;
+  height: 50px;
+  width: 40px;
+}
+
+.parent .child2 {
+  background-color: rgba(207, 103, 103, 0.5);
+  height: 50px;
+  width: 80px;
+}
+
+.parent .child3 {
+  background-color: rgba(207, 103, 103, 0.333333);
+  height: 50px;
+  width: 120px;
+}
+
+.parent .child4 {
+  background-color: rgba(207, 103, 103, 0.25);
+  height: 50px;
+  width: 160px;
+}
+
+.parent .child5 {
+  background-color: rgba(207, 103, 103, 0.2);
+  height: 50px;
+  width: 200px;
+}
+
+.one {
+  background-color: #cf6767;
+  height: 200px;
+  width: 200px;
+  float: left;
+}
+
+.two {
+  background-color: aquamarine;
+  height: 200px;
+  width: 200px;
+  float: right;
+}
+
+.brdr {
+  -webkit-transform: translate(30px);
+  transform: translate(30px);
+}
+
+.demoo {
+  -webkit-transform: translate(40px);
+  transform: translate(40px);
+}
+/*# sourceMappingURL=style.css.map */
